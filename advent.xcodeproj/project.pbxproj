@@ -20,12 +20,24 @@
 
 /* Begin PBXFileReference section */
 		1F6DDF622CFD09D600F16BBA /* advent */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = advent; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F6DDF842CFDEEC500F16BBA /* real.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = real.txt; sourceTree = "<group>"; };
+		1F6DDF852CFDEEC500F16BBA /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
+		1F6DDF872CFE059400F16BBA /* real.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = real.txt; sourceTree = "<group>"; };
+		1F6DDF882CFE059400F16BBA /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
+		1F6DDF8A2CFE05A700F16BBA /* real.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = real.txt; sourceTree = "<group>"; };
+		1F6DDF8B2CFE05A700F16BBA /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
+		1F6DDF922CFF474F00F16BBA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		1F6DDF642CFD09D600F16BBA /* advent */ = {
+		1F6DDF642CFD09D600F16BBA /* source */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = advent;
+			path = source;
+			sourceTree = "<group>";
+		};
+		1F6DDF742CFD0CF600F16BBA /* day1 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = day1;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -44,17 +56,49 @@
 		1F6DDF592CFD09D600F16BBA = {
 			isa = PBXGroup;
 			children = (
-				1F6DDF642CFD09D600F16BBA /* advent */,
+				1F6DDF922CFF474F00F16BBA /* .gitignore */,
+				1F6DDF642CFD09D600F16BBA /* source */,
 				1F6DDF632CFD09D600F16BBA /* Products */,
+				1F6DDF8C2CFE05A700F16BBA /* day1 */,
+				1F6DDF862CFDEEC500F16BBA /* day2 */,
+				1F6DDF892CFE059400F16BBA /* day3 */,
 			);
 			sourceTree = "<group>";
 		};
 		1F6DDF632CFD09D600F16BBA /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				1F6DDF742CFD0CF600F16BBA /* day1 */,
 				1F6DDF622CFD09D600F16BBA /* advent */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1F6DDF862CFDEEC500F16BBA /* day2 */ = {
+			isa = PBXGroup;
+			children = (
+				1F6DDF842CFDEEC500F16BBA /* real.txt */,
+				1F6DDF852CFDEEC500F16BBA /* test.txt */,
+			);
+			path = day2;
+			sourceTree = "<group>";
+		};
+		1F6DDF892CFE059400F16BBA /* day3 */ = {
+			isa = PBXGroup;
+			children = (
+				1F6DDF872CFE059400F16BBA /* real.txt */,
+				1F6DDF882CFE059400F16BBA /* test.txt */,
+			);
+			path = day3;
+			sourceTree = "<group>";
+		};
+		1F6DDF8C2CFE05A700F16BBA /* day1 */ = {
+			isa = PBXGroup;
+			children = (
+				1F6DDF8A2CFE05A700F16BBA /* real.txt */,
+				1F6DDF8B2CFE05A700F16BBA /* test.txt */,
+			);
+			path = day1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -73,7 +117,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				1F6DDF642CFD09D600F16BBA /* advent */,
+				1F6DDF642CFD09D600F16BBA /* source */,
 			);
 			name = advent;
 			packageProductDependencies = (

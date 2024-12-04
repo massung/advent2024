@@ -25,7 +25,7 @@ class Day4 {
                 return false
             }
             
-            if (row[safe: x + dx*i] ?? " ") != c {
+            if row[safe: x + dx*i] != c {
                 return false
             }
         }

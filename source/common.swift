@@ -9,5 +9,16 @@ func slurp(day: Int, test: Bool) -> String {
 }
 
 func slurpLines(day: Int, test: Bool) -> [Substring] {
-    slurp(day: day, test: test).split(separator: "\n", omittingEmptySubsequences: true)
+    return slurp(day: day, test: test).split(separator: "\n", omittingEmptySubsequences: true)
+}
+
+func slurpMatrix(day: Int, test: Bool) -> [[Substring.Element]] {
+    return slurpLines(day: day, test: test).map {Array($0)}
+}
+
+// helper extensions
+extension Array {
+    subscript(safe index: Index) -> Element? {
+        return indices.contains(index) ? self[index] : nil
+    }
 }

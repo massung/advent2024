@@ -29,6 +29,10 @@
 		1F6DDF922CFF474F00F16BBA /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		1F6DDF932CFFA36E00F16BBA /* real.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = real.txt; sourceTree = "<group>"; };
 		1F6DDF942CFFA36E00F16BBA /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
+		1F6DDFAD2D010D6300F16BBA /* real.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = real.txt; sourceTree = "<group>"; };
+		1F6DDFAE2D010D6300F16BBA /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
+		1F6DDFB42D01FE6000F16BBA /* real.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = real.txt; sourceTree = "<group>"; };
+		1F6DDFB52D01FE6000F16BBA /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -65,6 +69,8 @@
 				1F6DDF862CFDEEC500F16BBA /* day2 */,
 				1F6DDF892CFE059400F16BBA /* day3 */,
 				1F6DDF952CFFA36E00F16BBA /* day4 */,
+				1F6DDFAF2D010D6300F16BBA /* day5 */,
+				1F6DDFB62D01FE6000F16BBA /* day6 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +117,24 @@
 				1F6DDF942CFFA36E00F16BBA /* test.txt */,
 			);
 			path = day4;
+			sourceTree = "<group>";
+		};
+		1F6DDFAF2D010D6300F16BBA /* day5 */ = {
+			isa = PBXGroup;
+			children = (
+				1F6DDFAD2D010D6300F16BBA /* real.txt */,
+				1F6DDFAE2D010D6300F16BBA /* test.txt */,
+			);
+			path = day5;
+			sourceTree = "<group>";
+		};
+		1F6DDFB62D01FE6000F16BBA /* day6 */ = {
+			isa = PBXGroup;
+			children = (
+				1F6DDFB42D01FE6000F16BBA /* real.txt */,
+				1F6DDFB52D01FE6000F16BBA /* test.txt */,
+			);
+			path = day6;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

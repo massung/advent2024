@@ -9,7 +9,14 @@ func slurp(day: Int, test: Bool) -> String {
 }
 
 func slurpLines(day: Int, test: Bool) -> [Substring] {
-    return slurp(day: day, test: test).split(separator: "\n", omittingEmptySubsequences: false)
+    var lines = slurp(day: day, test: test).split(separator: "\n", omittingEmptySubsequences: false)
+    
+    // drop empty, trailing lines
+    if lines.last?.isEmpty ?? false {
+        lines.removeLast()
+    }
+    
+    return lines
 }
 
 func slurpMatrix(day: Int, test: Bool) -> [[Substring.Element]] {

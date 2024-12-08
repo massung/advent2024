@@ -40,3 +40,14 @@ extension Dictionary {
         }
     }
 }
+
+// common structs
+struct Pos : Hashable {
+    let x: Int
+    let y: Int
+    
+    func hash(into h: inout Hasher) {
+        h.combine(x)
+        h.combine(y)
+    }
+}

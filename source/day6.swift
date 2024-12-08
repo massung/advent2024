@@ -1,16 +1,6 @@
 import CoreFoundation
 import Foundation
 
-struct Pos : Hashable {
-    let x: Int
-    let y: Int
-    
-    func hash(into h: inout Hasher) {
-        h.combine(x)
-        h.combine(y)
-    }
-}
-
 enum Direction {
     case up
     case down

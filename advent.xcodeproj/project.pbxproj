@@ -19,6 +19,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F61F4F62D0768C0000A0504 /* real.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = real.txt; sourceTree = "<group>"; };
+		1F61F4F72D0768C0000A0504 /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
 		1F6DDF622CFD09D600F16BBA /* advent */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = advent; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6DDF842CFDEEC500F16BBA /* real.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = real.txt; sourceTree = "<group>"; };
 		1F6DDF852CFDEEC500F16BBA /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
@@ -65,6 +67,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F61F4F82D0768C0000A0504 /* day10 */ = {
+			isa = PBXGroup;
+			children = (
+				1F61F4F62D0768C0000A0504 /* real.txt */,
+				1F61F4F72D0768C0000A0504 /* test.txt */,
+			);
+			path = day10;
+			sourceTree = "<group>";
+		};
 		1F6DDF592CFD09D600F16BBA = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +91,7 @@
 				1F6DDFBB2D038EEE00F16BBA /* day7 */,
 				1F6DDFBE2D048E4F00F16BBA /* day8 */,
 				1F6DDFC32D05FAE900F16BBA /* day9 */,
+				1F61F4F82D0768C0000A0504 /* day10 */,
 			);
 			sourceTree = "<group>";
 		};

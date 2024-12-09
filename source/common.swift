@@ -5,7 +5,7 @@ func slurp(day: Int, test: Bool) -> String {
     let base = test ? "test" : "real"
     let path = "day\(day)/\(base).txt"
     
-    return try! String(contentsOfFile: path, encoding: .utf8)
+    return try! String(contentsOfFile: path, encoding: .utf8).trimmingCharacters(in: .newlines)
 }
 
 func slurpLines(day: Int, test: Bool) -> [Substring] {

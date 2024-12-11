@@ -28,5 +28,8 @@
 //Day10.run(test: true)
 //Day10.run()
 
-Day11.run(test: true)
-Day11.run()
+//Day11.run(test: true)
+//Day11.run()
+
+Day12.run(test: true)
+Day12.run()

@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1F61F51F2D09D646000A0504 /* BigInt in Frameworks */ = {isa = PBXBuildFile; productRef = 1F61F51E2D09D646000A0504 /* BigInt */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		1F6DDF602CFD09D600F16BBA /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -21,6 +25,10 @@
 /* Begin PBXFileReference section */
 		1F61F4F62D0768C0000A0504 /* real.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = real.txt; sourceTree = "<group>"; };
 		1F61F4F72D0768C0000A0504 /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
+		1F61F4FB2D088C26000A0504 /* real.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = real.txt; sourceTree = "<group>"; };
+		1F61F4FC2D088C26000A0504 /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
+		1F61F5202D09F515000A0504 /* real.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = real.txt; sourceTree = "<group>"; };
+		1F61F5212D09F515000A0504 /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
 		1F6DDF622CFD09D600F16BBA /* advent */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = advent; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6DDF842CFDEEC500F16BBA /* real.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = real.txt; sourceTree = "<group>"; };
 		1F6DDF852CFDEEC500F16BBA /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
@@ -61,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F61F51F2D09D646000A0504 /* BigInt in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +83,24 @@
 				1F61F4F72D0768C0000A0504 /* test.txt */,
 			);
 			path = day10;
+			sourceTree = "<group>";
+		};
+		1F61F4FD2D088C26000A0504 /* day11 */ = {
+			isa = PBXGroup;
+			children = (
+				1F61F4FB2D088C26000A0504 /* real.txt */,
+				1F61F4FC2D088C26000A0504 /* test.txt */,
+			);
+			path = day11;
+			sourceTree = "<group>";
+		};
+		1F61F5222D09F515000A0504 /* day12 */ = {
+			isa = PBXGroup;
+			children = (
+				1F61F5202D09F515000A0504 /* real.txt */,
+				1F61F5212D09F515000A0504 /* test.txt */,
+			);
+			path = day12;
 			sourceTree = "<group>";
 		};
 		1F6DDF592CFD09D600F16BBA = {
@@ -92,6 +119,8 @@
 				1F6DDFBE2D048E4F00F16BBA /* day8 */,
 				1F6DDFC32D05FAE900F16BBA /* day9 */,
 				1F61F4F82D0768C0000A0504 /* day10 */,
+				1F61F4FD2D088C26000A0504 /* day11 */,
+				1F61F5222D09F515000A0504 /* day12 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -205,6 +234,7 @@
 			);
 			name = advent;
 			packageProductDependencies = (
+				1F61F51E2D09D646000A0504 /* BigInt */,
 			);
 			productName = advent;
 			productReference = 1F6DDF622CFD09D600F16BBA /* advent */;
@@ -234,6 +264,9 @@
 			);
 			mainGroup = 1F6DDF592CFD09D600F16BBA;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1F61F51D2D09D646000A0504 /* XCRemoteSwiftPackageReference "BigInt" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1F6DDF632CFD09D600F16BBA /* Products */;
 			projectDirPath = "";
@@ -413,6 +446,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1F61F51D2D09D646000A0504 /* XCRemoteSwiftPackageReference "BigInt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/attaswift/BigInt";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1F61F51E2D09D646000A0504 /* BigInt */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F61F51D2D09D646000A0504 /* XCRemoteSwiftPackageReference "BigInt" */;
+			productName = BigInt;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1F6DDF5A2CFD09D600F16BBA /* Project object */;
 }

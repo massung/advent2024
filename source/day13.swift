@@ -110,19 +110,15 @@ class Day13 {
         return (A, B)
     }
     
-    func solveMachine(_ machine: PrizeMachine, offset: Int = 0) -> Int? {
-        guard let (a, b) = solve(machine, offset: offset) else {
-            return 0 // not possible
-        }
-        
-        return a * 3 + b
+    func solveMachine(_ machine: PrizeMachine, offset: Int = 0) -> Int {
+        return solve(machine, offset: offset).map { $0.0 * 3 + $0.1 } ?? 0
     }
     
     func part1() -> Int {
-        return machines.reduce(0) { $0 + (solveMachine($1) ?? 0) }
+        return machines.reduce(0) { $0 + solveMachine($1) }
     }
     
     func part2() -> Int {
-        return machines.reduce(0) { $0 + (solveMachine($1, offset: 10000000000000) ?? 0) }
+        return machines.reduce(0) { $0 + solveMachine($1, offset: 10000000000000) }
     }
 }

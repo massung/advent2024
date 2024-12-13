@@ -37,7 +37,7 @@ class Day13 {
         }
     }
     
-    func solve(_ machine: PrizeMachine, offset: Int = 0) -> (Int, Int)? {
+    func solve(_ machine: PrizeMachine, offset: Int = 0) -> Int? {
         // This is just a pair of linear equations. For example, from the test data:
         //
         // 94a + 22b = 8400 = x
@@ -106,12 +106,12 @@ class Day13 {
             return nil
         }
 
-        // number of presses for each button
-        return (A, B)
+        // the token requirements
+        return A * 3 + B
     }
     
     func solveMachine(_ machine: PrizeMachine, offset: Int = 0) -> Int {
-        return solve(machine, offset: offset).map { $0.0 * 3 + $0.1 } ?? 0
+        return solve(machine, offset: offset) ?? 0
     }
     
     func part1() -> Int {

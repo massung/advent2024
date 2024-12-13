@@ -46,6 +46,8 @@ struct Pos : Hashable {
     let x: Int
     let y: Int
     
+    static let zero: Pos = Pos(x: 0, y: 0)
+    
     func hash(into h: inout Hasher) {
         h.combine(x)
         h.combine(y)

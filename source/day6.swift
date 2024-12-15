@@ -1,31 +1,6 @@
 import CoreFoundation
 import Foundation
 
-enum Direction {
-    case up
-    case down
-    case right
-    case left
-    
-    func step(_ pos: Pos) -> Pos {
-        switch self {
-        case .up: return Pos(x: pos.x, y: pos.y - 1)
-        case .down: return Pos(x: pos.x, y: pos.y + 1)
-        case .right: return Pos(x: pos.x + 1, y: pos.y)
-        case .left: return Pos(x: pos.x - 1, y: pos.y)
-        }
-    }
-    
-    func turn() -> Direction {
-        switch self {
-        case .up: return .right
-        case .right: return .down
-        case .down: return .left
-        case .left: return .up
-        }
-    }
-}
-
 struct State : Hashable {
     let pos: Pos
     let dir: Direction

@@ -47,9 +47,43 @@ struct Pos : Hashable {
     let y: Int
     
     static let zero: Pos = Pos(x: 0, y: 0)
+    static let up: Pos = Pos(x: 0, y: -1)
+    static let down: Pos = Pos(x: 0, y: 1)
+    static let right: Pos = Pos(x: 1, y: 0)
+    static let left: Pos = Pos(x: -1, y: 0)
     
     func hash(into h: inout Hasher) {
         h.combine(x)
         h.combine(y)
+    }
+    
+    static func +(lhs: Pos, rhs: Pos) -> Pos {
+        return Pos(x: lhs.x + rhs.x, y: lhs.y + rhs.y)
+    }
+}
+
+// common enums
+enum Direction {
+    case up
+    case down
+    case right
+    case left
+    
+    func step(_ pos: Pos, times: Int = 1) -> Pos {
+        switch self {
+        case .up: return Pos(x: pos.x, y: pos.y - times)
+        case .down: return Pos(x: pos.x, y: pos.y + times)
+        case .right: return Pos(x: pos.x + times, y: pos.y)
+        case .left: return Pos(x: pos.x - times, y: pos.y)
+        }
+    }
+    
+    func turn() -> Direction {
+        switch self {
+        case .up: return .right
+        case .right: return .down
+        case .down: return .left
+        case .left: return .up
+        }
     }
 }

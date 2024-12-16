@@ -1,16 +1,6 @@
 import CoreFoundation
 import Foundation
 
-struct State : Hashable {
-    let pos: Pos
-    let dir: Direction
-    
-    func hash(into h: inout Hasher) {
-        h.combine(pos)
-        h.combine(dir)
-    }
-}
-
 enum WalkError : Error {
     case loop
 }

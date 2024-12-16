@@ -63,7 +63,7 @@ struct Pos : Hashable {
 }
 
 // common enums
-enum Direction {
+enum Direction: CaseIterable {
     case up
     case down
     case right
@@ -78,12 +78,22 @@ enum Direction {
         }
     }
     
-    func turn() -> Direction {
+    func turn(ccw: Bool = false) -> Direction {
         switch self {
-        case .up: return .right
-        case .right: return .down
-        case .down: return .left
-        case .left: return .up
+        case .up: return ccw ? .left : .right
+        case .right: return ccw ? .up : .down
+        case .down: return ccw ? .right : .left
+        case .left: return ccw ? .down : .up
         }
+    }
+}
+
+struct State : Hashable {
+    let pos: Pos
+    let dir: Direction
+    
+    func hash(into h: inout Hasher) {
+        h.combine(pos)
+        h.combine(dir)
     }
 }

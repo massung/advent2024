@@ -145,7 +145,8 @@ class Day17 {
         // decrement. Inspecting the program code, we can see that the program only
         // outputs once each iteration and decrements A each iteration. The only possible
         // way to reduce A is with the `adv` instruction, and we see there's only one
-        // of those with a divide by 8.
+        // of those with a divide by 8. We also see that the only "loop" in the code is
+        // at the end and always loops back to the beginning. That is key!
         //
         // For this reason, we know how long the program (N) and realize that since only
         // a single output is generated per loop, there must be N iterations. And since

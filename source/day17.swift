@@ -141,6 +141,28 @@ class Day17 {
     }
     
     func part2() -> Int {
+        // Because this puzzle suffers from the "halting problem", we know that A must
+        // decrement. Inspecting the program code, we can see that the program only
+        // outputs once each iteration and decrements A each iteration. The only possible
+        // way to reduce A is with the `adv` instruction, and we see there's only one
+        // of those with a divide by 8.
+        //
+        // For this reason, we know how long the program (N) and realize that since only
+        // a single output is generated per loop, there must be N iterations. And since
+        // A is reduced each iteration, we know that the solution must be within the
+        // domain 8^N ..< 8^N+1.
+        //
+        // That's too large a range to exhaustively search. But, since we know that every
+        // iteration reduces A, that implicitly reduces the search space for the rest
+        // of the program left to produce.
+        //
+        // So, if we start from the end of the program, the search space is now just 0..<8.
+        // If we find a match, then we multiply and have a new search space, also in the
+        // domain of X..<X+8.
+        //
+        // However, it's possible that there are multiple matches, so it must be solved
+        // recursively, incase one path fails to match the entire program.
+        
         return searchQuine()!
     }
 }

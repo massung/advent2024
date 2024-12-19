@@ -41,6 +41,10 @@
 		1F67DC692D11B84600046D5C /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
 		1F67DC6D2D13043C00046D5C /* real.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = real.txt; sourceTree = "<group>"; };
 		1F67DC6E2D13043C00046D5C /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
+		1F67DC722D145E6E00046D5C /* real.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = real.txt; sourceTree = "<group>"; };
+		1F67DC732D145E6E00046D5C /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
+		1F67DC772D14960400046D5C /* real.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = real.txt; sourceTree = "<group>"; };
+		1F67DC782D14960400046D5C /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
 		1F6DDF622CFD09D600F16BBA /* advent */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = advent; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6DDF842CFDEEC500F16BBA /* real.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = real.txt; sourceTree = "<group>"; };
 		1F6DDF852CFDEEC500F16BBA /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
@@ -169,6 +173,24 @@
 			path = day18;
 			sourceTree = "<group>";
 		};
+		1F67DC742D145E6E00046D5C /* day19 */ = {
+			isa = PBXGroup;
+			children = (
+				1F67DC722D145E6E00046D5C /* real.txt */,
+				1F67DC732D145E6E00046D5C /* test.txt */,
+			);
+			path = day19;
+			sourceTree = "<group>";
+		};
+		1F67DC792D14960400046D5C /* day20 */ = {
+			isa = PBXGroup;
+			children = (
+				1F67DC772D14960400046D5C /* real.txt */,
+				1F67DC782D14960400046D5C /* test.txt */,
+			);
+			path = day20;
+			sourceTree = "<group>";
+		};
 		1F6DDF592CFD09D600F16BBA = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +215,8 @@
 				1F67DC652D0F45F200046D5C /* day16 */,
 				1F67DC6A2D11B84600046D5C /* day17 */,
 				1F67DC6F2D13043C00046D5C /* day18 */,
+				1F67DC742D145E6E00046D5C /* day19 */,
+				1F67DC792D14960400046D5C /* day20 */,
 			);
 			sourceTree = "<group>";
 		};

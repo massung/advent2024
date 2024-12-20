@@ -45,6 +45,8 @@
 		1F67DC732D145E6E00046D5C /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
 		1F67DC772D14960400046D5C /* real.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = real.txt; sourceTree = "<group>"; };
 		1F67DC782D14960400046D5C /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
+		1F67DC7C2D15CCAB00046D5C /* real.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = real.txt; sourceTree = "<group>"; };
+		1F67DC7D2D15CCAB00046D5C /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
 		1F6DDF622CFD09D600F16BBA /* advent */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = advent; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6DDF842CFDEEC500F16BBA /* real.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = real.txt; sourceTree = "<group>"; };
 		1F6DDF852CFDEEC500F16BBA /* test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
@@ -191,6 +193,15 @@
 			path = day20;
 			sourceTree = "<group>";
 		};
+		1F67DC7E2D15CCAB00046D5C /* day21 */ = {
+			isa = PBXGroup;
+			children = (
+				1F67DC7C2D15CCAB00046D5C /* real.txt */,
+				1F67DC7D2D15CCAB00046D5C /* test.txt */,
+			);
+			path = day21;
+			sourceTree = "<group>";
+		};
 		1F6DDF592CFD09D600F16BBA = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +228,7 @@
 				1F67DC6F2D13043C00046D5C /* day18 */,
 				1F67DC742D145E6E00046D5C /* day19 */,
 				1F67DC792D14960400046D5C /* day20 */,
+				1F67DC7E2D15CCAB00046D5C /* day21 */,
 			);
 			sourceTree = "<group>";
 		};
